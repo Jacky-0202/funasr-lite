@@ -38,3 +38,19 @@ Because the ASR and VAD models are large, they are not included in this reposito
 python downloader.py
 ```
 After completion, the FunAudioLLM/ and fsmn-vad/ directories will be populated with the necessary model files.
+
+Usage
+Place your target audio file (e.g., sermon.mp3) into the Inputs/ directory.
+
+Run the main script.
+
+If you want to transcribe the default sermon.mp3:
+
+```Bash
+python main.py
+```
+If you have a specifically named file (e.g., audio_test.mp3 inside Inputs/):
+
+```Bash
+python main.py audio_test.mp3
+```
