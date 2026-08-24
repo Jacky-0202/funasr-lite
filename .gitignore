@@ -1,0 +1,9 @@
+__pycache__/
+
+FunAudioLLM/
+fsmn-vad/
+
+Inputs/*
+!Inputs/.gitkeep
+Outputs/*
+!Outputs/.gitkeep

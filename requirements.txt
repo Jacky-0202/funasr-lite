@@ -1,0 +1,14 @@
+# Core Machine Learning
+torch
+torchaudio
+
+# Speech Recognition Framework
+funasr
+
+# Model Download Utility
+huggingface-hub
+
+# Audio Processing (Required by FunASR under the hood)
+soundfile
+librosa
+modelscope
