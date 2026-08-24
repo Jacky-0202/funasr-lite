@@ -23,7 +23,7 @@ conda create -n funasr python=3.10 -y
 conda activate funasr
 ```
 
-2. Install Dependencies
+### 2. Install Dependencies
 Install the required Python packages:
 
 ```Bash
@@ -31,7 +31,7 @@ pip install -r requirements.txt
 ```
 (Note: If you have an NVIDIA GPU, it is recommended to install the CUDA-specific version of PyTorch from the official PyTorch website before running the command above to ensure maximum performance.)
 
-3. Download Models
+### 3. Download Models
 Because the ASR and VAD models are large, they are not included in this repository. Run the downloader script to fetch the models automatically. This script supports resuming interrupted downloads.
 
 ```Bash
@@ -39,7 +39,7 @@ python downloader.py
 ```
 After completion, the FunAudioLLM/ and fsmn-vad/ directories will be populated with the necessary model files.
 
-Usage
+### Usage
 Place your target audio file (e.g., sermon.mp3) into the Inputs/ directory.
 
 Run the main script.
