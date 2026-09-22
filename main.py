@@ -5,8 +5,8 @@ from asr_engine import ASREngine
 from text_formatter import TextFormatter
 
 def main():
-    # 1. Resolve input arguments
-    input_arg = sys.argv[1] if len(sys.argv) > 1 else "sermon.mp3"
+    # 1. Resolve input arguments using the centralized configuration
+    input_arg = sys.argv[1] if len(sys.argv) > 1 else CONFIG.DEFAULT_AUDIO
     
     if not os.path.isabs(input_arg) and not input_arg.startswith(CONFIG.INPUT_DIR):
         audio_path = os.path.join(CONFIG.INPUT_DIR, input_arg)

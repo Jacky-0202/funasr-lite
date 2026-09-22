@@ -10,6 +10,9 @@ class AppConfig:
     INPUT_DIR: str = os.path.join(BASE_DIR, "Inputs")
     OUTPUT_DIR: str = os.path.join(BASE_DIR, "Outputs")
     
+    # Default execution settings
+    DEFAULT_AUDIO: str = "sermon.mp3"
+    
     # Transcription settings
     LANGUAGE: str = "中文"
     MERGE_VAD: bool = True
