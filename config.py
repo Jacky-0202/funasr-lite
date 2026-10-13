@@ -11,7 +11,7 @@ class AppConfig:
     OUTPUT_DIR: str = os.path.join(BASE_DIR, "Outputs")
     
     # Default execution settings
-    DEFAULT_AUDIO: str = "sermon.mp3"
+    DEFAULT_AUDIO: str = "s1.mp3"
     
     # Transcription settings
     LANGUAGE: str = "中文"
